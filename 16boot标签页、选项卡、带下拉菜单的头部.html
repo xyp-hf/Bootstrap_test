@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+
+</style>
+</head>
+<!-- 
+标签页 选项卡
+头部
+ - nav
+ - nav-tabs 选项卡头部
+ - nav-justified
+ - nav-tabs-justified
+ - nav-pills
+ - nav-stacked
+ - 带下拉菜单的头部
+ -->
+<body style="height:2000px;">
+<div class="container">
+	<br><br>
+    <ul class="nav nav-tabs">
+    	<li class="active"><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li><a href="#">three</a></li>
+    </ul>
+    <br><br>
+    <ul class="nav nav-tabs" style="width:400px;">
+    	<li class="active"><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li><a href="#">three</a></li>
+    </ul>
+    <br><br>
+    <ul class="nav nav-tabs nav-justified" style="width:400px;">
+    	<li class="active"><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li><a href="#">three</a></li>
+    </ul>
+    <br><br>
+    <ul class="nav nav-tabs nav-tabs-justified"> <!-- nav-tabs-justified自适应的宽 -->
+    	<li class="active"><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li><a href="#">three</a></li>
+    </ul>
+    <br><br>
+    <ul class="nav nav-pills nav-justified" style="width:400px;"> <!--nav-pills导航-->
+    	<li class="active"><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li><a href="#">three</a></li>
+    </ul>
+    <br><br>
+    <ul class="nav nav-pills nav-stacked" style="width:400px;"><!--nav-pills nav-stacked纵向-->
+    	<li class="active"><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li><a href="#">three</a></li>
+    </ul>
+    <br><br>
+    <ul class="nav nav-tabs" style="width:400px;">
+    	<li class="active"><a href="#">one</a></li>
+        <li><a href="#">two</a></li> <!-- 该选项卡加一个下拉菜单dropdown -->
+        <li class="dropdown"> 
+        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">three <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            	<li><a href="#">child1</a></li>
+                <li><a href="#">child2</a></li>
+            </ul>
+       	</li>
+    </ul>
+</div>
+</body>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+
+
+</script>
+</html>

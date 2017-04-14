@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+.tab-content{ border:1px #ddd solid; border-top:none; padding:50px; border-radius:0 0 5px 5px;}
+</style>
+</head>
+
+<body style="height:2000px;">
+<!-- 
+标签页 选项卡
+    内容
+    - tab-content
+    - tab-pane
+    - data-toggle="tab"
+    - href对应id 才能对应的切换
+    - 淡入淡出方式
+    - 鼠标移入方式
+    - 带下拉菜单的切换
+ -->
+<div class="container">
+	<br><br>
+    <ul class="nav nav-tabs">
+    	<li class="active"><a href="#a" data-toggle="tab">one</a></li>
+        <li><a href="#b" data-toggle="tab">two</a></li>
+        <li><a href="#c" data-toggle="tab">three</a></li>
+    </ul>
+    <ul class="tab-content"> <!-- tab-content卡体内容 -->
+    	<li id="a" class="tab-pane active">aaaaaaaaaa</li>
+        <li id="b" class="tab-pane">bbbbbbbbbb</li>
+        <li id="c" class="tab-pane">cccccccccc</li>
+    </ul>
+    <br><br>
+    <div style="width:400px;">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#a1" data-toggle="tab">one</a></li>
+            <li><a href="#b1" data-toggle="tab">two</a></li>
+            <li><a href="#c1" data-toggle="tab">three</a></li>
+        </ul>
+        <ul class="tab-content">
+            <li id="a1" class="tab-pane active">aaaaaaaaaa</li>
+            <li id="b1" class="tab-pane">bbbbbbbbbb</li>
+            <li id="c1" class="tab-pane">cccccccccc</li>
+        </ul>
+    </div>
+    <br><br>
+    <div style="width:400px;">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#a2" data-toggle="tab">one</a></li>
+            <li><a href="#b2" data-toggle="tab">two</a></li>
+            <li><a href="#c2" data-toggle="tab">three</a></li>
+        </ul>
+        <ul class="tab-content">
+            <li id="a2" class="tab-pane fade in active">aaaaaaaaaa</li> <!-- fade in 切换时淡入淡出的方式 -->
+            <li id="b2" class="tab-pane fade">bbbbbbbbbb</li>
+            <li id="c2" class="tab-pane fade">cccccccccc</li>
+        </ul>
+    </div>
+    <br><br>
+    <div style="width:400px;">
+        <ul id="myTabs" class="nav nav-tabs"> <!-- 鼠标移入移除 -->
+            <li class="active"><a href="#a3" data-toggle="tab">one</a></li>
+            <li><a href="#b3" data-toggle="tab">two</a></li>
+            <li><a href="#c3" data-toggle="tab">three</a></li>
+        </ul>
+        <ul class="tab-content">
+            <li id="a3" class="tab-pane active">aaaaaaaaaa</li>
+            <li id="b3" class="tab-pane">bbbbbbbbbb</li>
+            <li id="c3" class="tab-pane">cccccccccc</li>
+        </ul>
+    </div>
+    <br><br>
+    <div style="width:400px;">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#a4" data-toggle="tab">one</a></li>
+            <li><a href="#b4" data-toggle="tab">two</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">three <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#c4" data-toggle="tab">child1</a></li>
+                    <li><a href="#d4" data-toggle="tab">child2</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="tab-content">
+            <li id="a4" class="tab-pane active">aaaaaaaaaa</li>
+            <li id="b4" class="tab-pane">bbbbbbbbbb</li>
+            <li id="c4" class="tab-pane">cccccccccc</li>
+            <li id="d4" class="tab-pane">dddddddddd</li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+
+//配置 方法 自定义事件
+$('#myTabs a').mouseover(function(){ //鼠标移入移除
+	$(this).tab('show');
+});
+</script>
+</html>

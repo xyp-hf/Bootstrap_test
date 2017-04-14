@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+body{ margin-top:50px;}
+.container{ width:960px; padding:0;}
+.navbar-default{background-image: -moz-linear-gradient(center top , #086ed5, #055db5);}
+.navbar-header{ margin-top:-3px;}
+.navbar-nav a{ color:white !important;}
+</style>
+</head>
+<!-- 
+ 导航条
+ - navbar-header
+ - navbar-brand
+ - navbar-left
+ - navbar-right
+ - navbar-btn
+ - navbar-link
+ - navbar-text
+ - navbar-form
+ 例子：知乎导航条
+ -->
+
+<body style="height:2000px;">
+<!--<nav class="navbar navbar-inverse navbar-fixed-top"> navbar-fixed-top固定定位在可视区顶部 navbar-fixed-buttom固定定位在底部
+	<div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">one</a></li>
+            <li><a href="#">two</a></li>
+            <li><a href="#">three</a></li>
+        </ul>
+    </div>
+</nav>-->
+<!--<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+    	<div class="navbar-header">
+    		<a href="#" class="navbar-brand">logo</a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="#">one</a></li>
+            <li><a href="#">two</a></li>
+            <li><a href="#">three</a></li>
+        </ul>
+        <button class="btn btn-default navbar-btn">搜索</button> navbar-btn上下居中
+        <a href="#" class="navbar-link">连接</a>
+        <p class="navbar-left navbar-text">7823975935</p>
+        <form class="navbar-form navbar-left">
+        	<input type="text" class="form-control" placeholder="提示信息">            <input type="submit" class="btn btn-primary" value="搜索">
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+        </ul>
+    </div>
+</nav>-->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+    	<div class="navbar-header"> <!-- logo必须加class="navbar-header"的父级 -->
+    		<a href="#" class="navbar-brand"><img src="img/zhihulogo.png"></a>
+        </div>
+        <form class="navbar-form navbar-left">
+        	<div class="input-group">
+            	<input type="text" class="form-control" style="width:320px" placeholder="搜索问题、话题或人">
+                <span class="input-group-addon"><a href="#"><span class="glyphicon glyphicon-search"></span></a></span>
+            </div>
+        </form>
+        <ul class="nav navbar-nav navbar-left">
+        	<li><a href="#">首页</a></li>
+            <li><a href="#">话题</a></li>
+            <li><a href="#">发现</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        	<li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册知乎</a></li>
+            <li><a href="#">登录</a></li>
+        </ul>
+        <button class="btn btn-primary navbar-btn navbar-right">提问</button>
+    </div>
+</nav>
+<div class="container">
+	<p>1111111</p>
+    <p>2222222</p>
+    <p>3333333</p>
+    <p>4444444</p>
+</div>
+</body>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+
+</script>
+</html>

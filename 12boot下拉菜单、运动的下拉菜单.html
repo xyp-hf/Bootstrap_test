@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+.github-style .btn{ font-weight:700;}
+.icon-fork{ background:url(img/fork.png) no-repeat; background-size:cover; width:12px; height:12px;}
+</style>
+</head>
+
+<body style="height:2000px;">
+<div class="container">
+<!-- 
+下拉菜单：
+ 属性：
+ - data-* 来操作js的交互
+ - aria-* 屏幕阅读器 aria-haspopup 是否有弹出下拉菜单
+ - aria-expanded 当前是否是一种展开的状态,true表示展开,false表示隐藏
+ - aria-label-ledby="id" 
+ - role 描述的是状态
+ open
+ dropdown-menu-right
+ dropdowm-header
+ divider
+ 例子：运动且带图标的菜单
+ -->
+
+	<br><br>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"> <!-- data-toggle="dropdown"交互触发器,toggle是切换的意思 -->
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+    <div class="row" style="height:200px;">
+    	<div class="col-lg-4">
+        	<div class="dropdown open"> <!-- open下拉菜单默认显示 -->
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4">
+        	<div class="dropdown open pull-right">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4">
+        	<div class="dropdown open">
+                <button class="btn btn-default btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right"> <!-- dropdown-menu-right让下拉菜单靠右显示 -->
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+    	<div class="col-lg-4">
+        	<div class="dropdown open">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu btn-block" style="width:400px;"> <!-- btn-block使下拉菜单和父级一样高 -->
+                    <li class="text-center"><a href="#">Action</a></li> <!-- text-center表示文字居中 -->
+                    <li class="text-center"><a href="#">Another action</a></li>
+                    <li class="text-center"><a href="#">Something else here</a></li>
+                    <li class="text-center"><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4">
+        	<div class="dropdown open pull-right"> <!-- dropdown表示下拉框向下展开,dropup表示下拉框向上展开 -->
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                	<li class="dropdown-header">第一部分</li>
+                    <li class="active"><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li> <!-- divider表示分割线的意思 -->
+                    <li class="dropdown-header">第二部分</li>
+                    <li class="disabled"><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4">
+        	<div class="dropup open">
+                <button class="btn btn-default btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+</html>

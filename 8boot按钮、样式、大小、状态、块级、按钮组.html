@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+
+</style>
+</head>
+
+<body style="height: 2000px;">
+<!-- 
+按钮
+	基类
+	 - btn
+	样式
+	 - btn-default(默认)
+	 - btn-link(链接)
+	大小
+	 - btn-*[lg,sm,xs]
+	状态
+	 - active
+	 - disabled
+ -->
+
+<div class="container">
+	<br>
+	<!-- 按钮 -->
+    <input type="button" value="默认样式">
+    <input type="button" value="首选项" class="btn btn-primary">
+    <input type="button" value="成功" class="btn btn-success">
+    <input type="button" value="一般信息" class="btn btn-info">
+    <input type="button" value="警告" class="btn btn-warning">
+    <input type="button" value="危险" class="btn btn-danger">
+    <br><br>
+    <input type="button" value="按钮" class="btn"> <!-- btn默认的按钮 -->
+    <input type="button" value="按钮" class="btn btn-default"> <!-- btn带有鼠标移上渐变效果的按钮 -->
+    <input type="button" value="按钮" class="btn btn-link"> <!-- btn 超链接形式的按钮 -->
+    <!-- 按钮大小 -->
+	<input type="button" value="首选项" class="btn btn-primary">
+	<input type="button" value="首选项" class="btn btn-primary btn-lg"> <!-- btn-lg表示按钮大小 -->
+	<input type="button" value="首选项" class="btn btn-primary btn-sm"> <!-- btn-sm表示按钮大小 -->
+	<input type="button" value="首选项" class="btn btn-primary btn-xs"> <!-- btn-xs表示按钮大小 -->
+	<br><br>
+	<!-- 输入框大小 -->
+	<input type="text" class="form-control"> <!-- 默认输入框大小 -->
+	<input type="text" class="form-control input-lg"> <!-- 大输入框大小 -->
+	<input type="text" class="form-control input-sm"> <!-- 小输入框大小 -->
+	<br><br>
+	<!-- 按钮状态 -->
+	<input type="button" value="首选项" class="btn btn-primary">
+	<input type="button" value="首选项" class="btn btn-primary active"> <!-- active表示鼠标按下的状态 -->
+	<input type="button" value="首选项" class="btn btn-primary disabled"> <!-- disabled禁止操作 -->
+
+    <p>默认段落</p>
+    <p class="bg-primary">首选项</p>
+    <p class="bg-success">成功</p>
+    <p class="bg-info">一般信息</p>
+    <p class="bg-warning">警告</p>
+    <p class="bg-danger">危险</p>
+    <br>
+    <span>默认文字</span>
+    <span class="text-primary">首选项</span>
+    <span class="text-success">首选项</span>
+    <span class="text-info">首选项</span>
+    <span class="text-warning">首选项</span>
+    <span class="text-danger">首选项</span>
+    <br>
+<!-- 
+按钮
+	种类
+	 - a , input ,button
+	 块级
+	 - btn - block
+	 按钮组
+	  - btn-group
+	  - btn-group-justified
+	  - btn-group-vertical
+	实例 ：github按钮组
+ -->
+	<input type="button" value="首选项" class="btn btn-primary">
+	<input type="button" value="首选项" class="btn btn-primary active">
+	<input type="button" value="首选项" class="btn btn-primary disabled">
+	<br><br>
+    <a href="#" class="btn btn-primary">连接1</a> <!-- btn-primary把a标签转成按钮 -->
+    <button class="btn-btn-primary">按钮</button>
+    
+    <a href="#" class="bg-success">连接2</a>
+    <a href="#" class="text-danger">连接3</a>
+    <br><br>
+    <div class="alert alert-warning">我是警告框</div>
+    <div class="alert alert-danger">我是危险信息</div>
+    <br><br>
+    <div class="panel panel-primary">
+    	<div class="panel-heading">
+        	<h4>我是面板的标题</h4>
+        </div>
+        <div class="panel-body">
+        	我是面板的主体内容！
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+</html>

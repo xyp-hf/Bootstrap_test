@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>响应式工具</title>
+	<!-- 兼容IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 移动端视口属性 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<style type="text/css">
+div[class*="col-"]{background:#666; border:1px #00F solid;color: white;height:50px;}
+.tips1{ width:30px; height:300px; background:black; right:0;}
+.tips2{ width:30px; height:100px; background:blue; right:0;}
+</style>
+</head>
+<body>
+<!-- 
+    响应式工具
+    - 针对不同设备展示或隐藏页面内容
+    可见类
+    - visible-*-*
+        >> lg md sm xs
+        >> block inline inline-block
+    - hidden
+
+    打印类
+    - visible-print-* hidden-print
+    实例：天猫侧边栏
+ -->
+ <!-- 
+    显示隐藏
+    visible-lg-block : 只有当分辨率在lg的阈值以上时，才会显示
+    hidden-sm hidden-xs 隐藏
+    
+    pull-left 左浮动
+    pull-right 右浮动
+    affix 固定定位 浮于屏幕上方
+  -->
+
+<!--    
+ <div class="container">
+    <div class="row">
+        <div class="col-lg-4 visible-lg-block">col-lg-4</div>
+        <div class="hidden-sm hidden-xs">aaaaaaaa</div>
+    </div>
+</div> 
+-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="tips1 visible-lg-block affix"></div>
+        <div class="tips2 hidden-lg"></div>
+    </div>
+    <div>aaaaaaaaaa</div>
+</div>
+
+
+
+	<script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>

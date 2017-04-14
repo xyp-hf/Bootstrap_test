@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>无标题文档</title>
+	<!-- 兼容IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 移动端视口属性 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<style type="text/css">
+div[class*="col-"]{background:#666; border:1px #00F solid;color: white;height:50px;}
+</style>
+</head>
+<body>
+<!-- 
+其他
+ - 列偏移
+    >> col-[*]-offset-*
+ - 列排序
+    >> col-[*]-push-*
+    >> col-[*]-pull-*
+ - 嵌套
+ - 清浮动
+
+
+ -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">col-lg-4</div>
+            <div class="col-lg-4">col-lg-4</div>
+            <div class="col-lg-4">col-lg-4</div>
+        </div>
+        <!-- 
+        列偏移 
+        col-lg-offset-4 意思是向右偏移4个栅格的距离
+        当小于col-lg-*的阈值的时候,就会变成一竖列
+
+        当分辨率不支持col-lg-offset-4是，还是支持col-md-offset-4
+        当没有设置md网格大小时候,通过偏移量自动设置md的网格大小
+        
+        如果设置了md,那么md则会生效
+        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4"></div>
+        -->
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4 col-md-offset-4">col-lg-4</div>
+        </div>
+        <!-- 列排序 -->
+        <!-- 
+        让两列颠倒一下顺序
+        col-lg-push-10 往后偏移10个栅格
+        col-lg-pull-2 往前偏移2个栅格
+
+        col-lg-offset-* 只能向右移
+         -->
+        <div class="row">
+            <div class="col-lg-2 col-lg-push-10">col-lg-2</div>
+            <div class="col-lg-10 col-lg-pull-2">col-lg-10</div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-2 col-lg-push-10">col-lg-2</div>
+            <!-- <div class="col-lg-10 col-lg-pull-2">col-lg-10</div> -->
+        </div>
+        <!-- 偏移 -->
+        <div class="row">   
+            <div class="col-lg-4">col-lg-4</div>
+            <div class="col-lg-4 col-lg-offset-2">col-lg-10</div>
+        </div>
+        <!-- 排序 -->
+        <div class="row">   
+            <div class="col-lg-4">col-lg-4</div>
+            <div class="col-lg-4 col-lg-push-5">col-lg-5</div>
+        </div>
+
+        <!-- 
+        嵌套
+        嵌套的内部按父级的宽度重新分配
+         -->
+        <div class="row">   
+            <div class="col-lg-6">col-lg-6
+                <div class="row">
+                    <div class="col-lg-4">col-lg-4</div>
+                    <div class="col-lg-4">col-lg-4</div>
+                    <div class="col-lg-4">col-lg-4</div>
+                </div>
+            </div>
+        </div>
+        <!-- 清除浮动 -->
+        <div class="clearfix"></div>
+    </div>
+	<script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>
